@@ -1,0 +1,58 @@
+Basic Programs
+
+This Document will list simple basic programs that will help someone learn the syntax and style of a language. Each program will be able to be ran seperate from any other program.
+
+Categories
+
+001User Interaction
+002Variables
+003Functions
+004Simple Data Structures
+005Files
+006Networking/Web
+007OOP Paradigm
+008Functional Paradigm
+009Logical Paradigm
+010Other Paradigms
+011Threads
+012Databases
+013Graphics
+014Features
+
+Advanced Categories
+Data Structures(not in core language)
+Algorithms
+
+
+
+001User Interaction
+	Hello World - Print to command line
+	Repeater - reads phrase from user. Repeats phrase in all caps.
+	ArgPass - read arguments from command line. Use loop
+	Calculator - Create a GUI with a library to create a simple calculator
+002Variables and Scope
+	VarTest - create a variable of each basic type. Use built in functionalities
+003Function
+	Row Row Your Boat - call a function from inside the file, outside of file, outside of file in a lower directory. Use Error Handling.
+	Pass Method Test - test for pass by value with conditional structures
+004Data Structures
+	Arrays
+	(create an additional file for each built in data structure)
+005Files
+	Success100 - write success 100 times.
+	Failure57 - using a file created with Success100, change the 57th success to failure
+	Random CSV - make a csv file with a random ID, and random columns
+	ReadCSV - read the csv file and perform calculations
+006Networking/Web
+	
+007OOP Paradigm
+008Functional Paradigm
+009Logical Paradigm
+010Other Paradigms
+011Threads
+012Databases
+013Graphics
+014Features
+
+
+
