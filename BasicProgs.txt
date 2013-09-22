@@ -2,22 +2,32 @@ Basic Programs
 
 This Document will list simple basic programs that will help someone learn the syntax and style of a language. Each program will be able to be ran seperate from any other program.
 
+
 Categories
 
 001User Interaction
-002Variables
-003Functions
-004Simple Data Structures
-005Files
-006Networking/Web
-007OOP Paradigm
-008Functional Paradigm
-009Logical Paradigm
-010Other Paradigms
-011Threads
-012Databases
-013Graphics
-014Features
+	Introduce basic program structure. 
+	Learn to create interactive program
+002Variables, Functions and Scope
+	Learn basic data types
+	Basic functions
+	Learn the limits of scope
+	learn to use external file to expand program
+	Learn Conditional and Iterative Structures
+003Simple Data Structures
+	Learn built in data structures in the language
+004Files
+005Networking/Web
+006OOP Paradigm
+007Functional Paradigm
+008Logical Paradigm
+009Other Paradigms
+010Threads
+011Databases
+012Graphics
+013Sounds
+014Video
+015Features
 
 Advanced Categories
 Data Structures(not in core language)
@@ -30,29 +40,42 @@ Algorithms
 	Repeater - reads phrase from user. Repeats phrase in all caps.
 	ArgPass - read arguments from command line. Use loop
 	Calculator - Create a GUI with a library to create a simple calculator
-002Variables and Scope
-	VarTest - create a variable of each basic type. Use built in functionalities
-003Function
-	Row Row Your Boat - call a function from inside the file, outside of file, outside of file in a lower directory. Use Error Handling.
-	Pass Method Test - test for pass by value with conditional structures
-004Data Structures
+002Variables Functions and Scope
+	(Body of basic language is used here)
+	(Error Handling)
+	BeerOnTheWall - loop, one function, strings, ints
+	WheresTheBass - test importing functions outside of the file
+	(datatype)Play - experiment with a data type
+	Find pi to the Nth digit - find limits of accuracy
+	Collatz Conjecture - Use recursion and 
+		start with a number n > 1 find steps it takes to reach 1
+		if n%2==0 divide by 2
+		otherwise n*3+1
+003Data Structures
 	Arrays
 	(create an additional file for each built in data structure)
-005Files
+004Files
 	Success100 - write success 100 times.
 	Failure57 - using a file created with Success100, change the 57th success to failure
 	Random CSV - make a csv file with a random ID, and random columns
 	ReadCSV - read the csv file and perform calculations
-006Networking/Web
-	
-007OOP Paradigm
-008Functional Paradigm
-009Logical Paradigm
-010Other Paradigms
-011Threads
-012Databases
-013Graphics
-014Features
-
+005Networking/Web
+	Chat Client
+	FTP Program
+	Port Scanner
+	Page Scraper
+006OOP Paradigm
+007Functional Paradigm
+008Logical Paradigm
+009Other Paradigms
+010Threads
+011Databases
+	Table maker - use Random CSV program to add in data to makea  table
+012Graphics
+	Water Marking
+013Sound
+014Video
+015Features
+	(Experiment with a feature of a language to learn how to use it.)
 
 
