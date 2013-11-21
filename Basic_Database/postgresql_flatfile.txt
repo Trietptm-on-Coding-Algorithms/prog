@@ -1,0 +1,4 @@
+city	temp_lo	temp_hi	prcp	data
+'Houston'	90	105	.9	'8-31-2013'
+'Houston'	80	90	.99	'10-6-2013'
+'Houston'	85	95	.95	'10-7-2013'

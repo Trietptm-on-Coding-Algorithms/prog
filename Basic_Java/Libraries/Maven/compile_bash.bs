@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+mvn package
+
+printf "\n\n\n Starting to run Application \n\n"
+
+java -cp target/xml_notes-1.0-SNAPSHOT.jar com.lebarton.xml_notes.App

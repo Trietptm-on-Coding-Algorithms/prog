@@ -1,0 +1,11 @@
+
+--Eq - used for equality testing
+--Ord - used for ordering types. 
+	-- result can be GT, LT, EQ for compare
+--Show - types can be presented as a string
+--Read - reads a string and converts it to a type that has the read typeclass implemented
+--Enum - sequentially ordered types that are enumerated
+--Bounded - members have an upper and lower bound
+--Num - numeric type class
+--Integral - Numeric type class for integers
+--Floating - used for floating point numbers
