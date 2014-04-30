@@ -1,0 +1,24 @@
+
+
+basic controller
+
+var CONTROLLERNAME = angular.module( 'CONTROLLERNAME', [
+	'modules',
+	'that',
+	'are',
+	'depended',
+	'on',
+	'by_CONTROLLERNAME']);
+
+CONTROLLERNAME.config(['module',
+	function($module) {
+		use module
+	}
+}]);
+
+CONTROLLERNAME.controller('controlName', ['modules'],
+	function(module) {
+		//do stuff
+	}:w
+
+})

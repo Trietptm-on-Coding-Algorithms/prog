@@ -1,0 +1,18 @@
+
+
+play new PROJECT_NAME
+	play generates several directories
+		app/ contains core of application
+		conf/ contains all of the configuration files
+		lib/ contains optional java libraries
+		public/ contains all publicly available web resources
+		test/ contains all the application tests
+	
+
+NO CLASS FILEs -  play framework compiles java on the fly
+
+play clean 
+	discards bytecode cache
+
+play run
+	runs the application for the directory you are in

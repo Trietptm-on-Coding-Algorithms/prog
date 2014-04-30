@@ -1,0 +1,8 @@
+
+
+G++
+
+basic command - 
+	g++ -o OUTPUT_NAME sourcefile.cpp
+
+	-Wall - flag that will print warning messages about problematic code

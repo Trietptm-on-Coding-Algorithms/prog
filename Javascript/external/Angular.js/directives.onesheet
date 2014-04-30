@@ -1,0 +1,12 @@
+
+
+ng-repeat - will repeat information that is in the respective scope of the controller
+	<li ng-repeat="phone in phones">
+		{{phone.name}}
+		<p>{{phone.snipprt}}</p>
+	</li>
+
+	filter - will allow you to filter based on search
+	orderBy - allows you to order the elements
+
+ng-view - will include view template for the current route into the layout template

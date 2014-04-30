@@ -1,0 +1,79 @@
+<html><head><title>RequestTester</title>
+<style>
+
+#chat_window {
+	width:500px;
+	height:500px;
+	border:5px solid black;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+
+#chat_window div {
+	position:relative;
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+#chat_text {
+	width:100%;
+	max-height:80%;
+}
+
+#chat_controls {
+	width:100%;
+	max-height:20%;
+	background:#d3d3d3;
+}
+
+#chat_input * {
+	margin: 10px;
+}
+
+#c_in {
+	width:80%;
+}
+#chat_box {
+
+}
+
+</style>
+</head><body>
+		<script src=//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js></script>
+		<form>	
+			<button type="button" id="ajax_but"> Ajax</button> 
+		</form> 
+			
+
+		<div id="chat_window">
+			<div id="chat_text">
+				<div id="chat_box">
+				</div>
+			</div>
+			<div id="chat_controls">
+				<form id="chat_input">	
+					<input type="text" id="c_in">
+					<button type="button" id="ajax_but">Send</button> 
+				</form> 
+			</div>
+		</div>
+		
+		<script> 
+			var button1 = document.getElementById("ajax_but");
+			function ajax_tester() {
+				xmlhttp = new XMLHttpRequest();
+				xmlhttp.open( "GET", "http://localhost:8080/ajax_test", true );
+				xmlhttp.onreadystatechange=function(){
+					if ( xmlhttp.readyState==4 && xmlhttp.status==200) {
+						var string = xmlhttp.responseText; 
+						console.log(string);
+					}
+				}
+				xmlhttp.send();
+			}
+			button1.onclick = function() { ajax_tester(); };  
+		</script>
+	
+</body></html> 

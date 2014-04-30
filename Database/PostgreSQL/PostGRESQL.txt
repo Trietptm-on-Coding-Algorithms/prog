@@ -1,0 +1,71 @@
+PostGRESQL
+
+
+<!-- These notes are pulled from official documentation -->
+
+PostgreSQL is an object-relational database management system
+
+Started at UC berkeley. It is an open source descendant of the Berkeley Code.
+
+Features
+	complex queries
+	foreign keys
+	triggers
+	views
+	transactional integrity
+	multiversion concurrency control
+
+
+
+----Introduction
+
+PostgreSQL Architecture
+	client/server model
+		server manages database files, accepts connections to the database from clients and performs actions on behalf of client server is postgres
+		client wants to perform  operations 
+
+----Getting started
+
+/usr/lib/createdb
+/usr/lib/postgresql/9.1/bin/createdb
+
+
+
+
+
+---- Commands
+
+
+Database management
+	../bin/
+		"createdb DBNAME"
+		"dropdb DBNAME"
+
+Syntax
+	'E' indicates escaped characters
+
+Database Constants
+	"current_date
+
+
+
+
+
+
+---- Setting up a database for TCP connections
+
+
+Two step process
+	1. Allow a user account to login on the network
+	2. Allow connections to be listened for on the network
+
+User Account network login
+	psql_hba.conf - a file similar to this
+		the file is a table with rows similar to
+		ConectionFrom	Database	DatabaseUser	Network	Login_Type
+	add user to this file
+
+Configuration File
+	find the setting for listen to connections
+		change to samenet/list of ips/ or whatever you need
+

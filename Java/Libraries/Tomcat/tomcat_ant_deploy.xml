@@ -1,0 +1,24 @@
+
+
+<!-- add this fragment into the build file -->
+<!-- requirements
+	catalina-ant.jar adding to classpath
+	tomcat manager application available -->
+
+<taskdef resource="org/apache/catalina/ant/catalina.tasks" classpathref="xxx"/>
+
+<target name="tomcat.undeploy" >
+	<undeploy url="${deploy.url}" failOnError="false" username="${deploy.user}" password="${deploy.pass}" path="${deploy.context}" />
+</target>
+
+<target name="tomcat.deploy" >
+	<deploy url="${deploy.url}" failOnError="false" username="${deploy.user}" password="${deploy.pass}" war="file:${deploy.war}" />
+</target>
+
+<target name="tomcat.start">
+	<start url="${deploy.url}" failOnError="false" username="${deploy.user}" password="${deploy.pass}" path="${deploy.context}" />
+</target>
+
+<target name="tomcat.stop">
+	<stop url="${deploy.url}" failOnError="false" username="${deploy.user}" password="${deploy.pass}" path="${deploy.context}" />
+</target>

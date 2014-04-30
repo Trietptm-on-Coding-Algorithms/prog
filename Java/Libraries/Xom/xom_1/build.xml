@@ -1,0 +1,78 @@
+<project name="Xom_Experiment" default="run" basedir=".">
+	<description>
+		Xom experiment
+	</description>
+
+
+	<property name="src" 		value="src"/>
+	<property name="build"		value="build"/>
+	<property name="dist"		value="dist"/>
+	<property name="lib"		value="lib"/>
+	<property name="dist.jar"	value="${dist}/${ant.project.name}.jar" />
+	<property name="main-class"	value="xom.main" />
+
+
+	<path id="project.lib.path">
+		<fileset dir="${lib}">
+			<include name="**/*.jar"/>
+		</fileset>	
+	</path>
+
+	<path id="java.classes.dir">
+		<pathelement path="${basedir}/build/classes"/>
+		<pathelement location="${dist.jar}" />
+		<fileset dir="${lib}">
+			<include name="**/*.jar"/>
+		</fileset>	
+	
+	</path>
+
+
+
+	<target name="clean" 
+		description="clean up">
+
+		<delete dir="${build}"/>
+		<delete dir="${dist}"/>
+	</target>
+
+
+	<target name="init" depends="clean"
+		description="initialize build folder">
+
+		<tstamp/>
+		<mkdir dir="${build}"/>
+
+	</target>
+	
+
+
+	<target name="compile" depends="init" 
+		description="compile the source">
+
+		<mkdir dir="${build}/classes" />
+		<javac srcdir="${src}" destdir="${build}/classes" includeantruntime="true">
+			<classpath refid="project.lib.path"/>
+		</javac>
+
+	</target>
+
+
+
+
+
+	<target name="dist" depends="compile" 
+			description="Generate the distribution">
+		<mkdir dir="${dist}"/>
+		<jar destfile="${dist.jar}" basedir="${build}"/>
+	</target>
+
+	<target name="run" depends="dist"
+			description="Run the program">
+		<java classname="${main-class}">
+			<classpath refid="java.classes.dir" />
+		</java> 
+	</target>
+
+
+</project>

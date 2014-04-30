@@ -1,0 +1,7 @@
+List all databases
+	\l
+Run Script
+	run script, this command is for running a script from inside of the database. \i 'scriptname'
+
+
+

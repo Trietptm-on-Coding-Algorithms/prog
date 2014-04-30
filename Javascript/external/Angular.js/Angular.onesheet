@@ -1,0 +1,19 @@
+
+features
+	two-way data binding - data is binded to certain html elements and the $scope will automatically update according to the model
+
+Vocabulary
+	bootstrapper - An angular script that is executed once the dom completes loading
+	directive - an html attribute that will moderate behavior of certain elements
+	services - important variables that translate funtionality to the view
+
+
+Bootstrapper
+
+	1, Create a new injector
+	2. Compile Service - walks dom and locates directives
+	3. Link phase - attaches all directives to scope
+
+Services
+	$scope - a variable that gives access to html directives
+	$http - communicates with server with ajax or jsonp
