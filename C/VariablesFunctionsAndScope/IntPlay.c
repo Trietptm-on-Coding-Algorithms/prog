@@ -27,6 +27,7 @@ int main( int argc, char* argv[] )
 	signed long long int slli;
 	unsigned long long ull;
 	unsigned long long int ulli;
+
 	float floaty;
 	double dbl;
 	long double ldbl;

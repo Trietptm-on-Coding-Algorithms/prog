@@ -1,0 +1,12 @@
+#!/bin/bash
+
+for dire in $(ls -1)
+do
+	test=` echo $dire | grep -c Basic_`
+	if [ "$test" -eq "1" ]
+	then
+		rm -rf $dire
+	fi
+done
+
+

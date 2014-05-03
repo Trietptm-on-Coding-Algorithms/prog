@@ -1,0 +1,43 @@
+
+
+uptime
+	shows the amount of time system has been on
+date
+	shows the current date
+users
+	shows the users currently logged into machine
+
+pwd - prints working directory
+hostname - shows the computer's network name
+mkdir - make directory
+cd - change directory
+ls - list contents of directory
+rmdir - removes directory
+pushd - puts directory onto directory stack
+popd - pops directory from stack
+cp - copies a file
+mv - moves a file
+less - page through a file
+cat - prints the whole files
+xargs - execute arguments
+find - finds files
+grep - finds things inside of files
+man - read a manual page
+apropos - find what man page is right
+env - look at environemental variables
+echo - print some arguments
+export - exports a new set of environmental variables
+exit - exits the shell
+sudo -  root powers
+chmod - change permission modifiers
+chown - change ownership
+touch - make empty files
+
+
+Bash Special Characters
+Pipe - pipes output to another commands
+	a | b
+> 0 takes output from left, then writes it to file on write
+< - takes and send input from file on right to program on left
+>> - takes the output of the command on the left, then appends it to the file on the right
+* - wildcard character. Represents one or more characters.
