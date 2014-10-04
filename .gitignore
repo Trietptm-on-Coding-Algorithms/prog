@@ -1,0 +1,8 @@
+
+
+#create temp directory to ignore all files
+tmp/**/*
+**/*.o
+**/*.class
+
+**/*.pyc
