@@ -1,0 +1,11 @@
+gcc
+clang
+gdb
+valgrind
+doxygen
+make
+objdump
+
+ctags
+	usage: ctags -R ./
+		create a tag file for directory
