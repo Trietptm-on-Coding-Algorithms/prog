@@ -1,10 +1,11 @@
 #!/bin/bash
 
-function1 ()
+function1 () #no arguments. Access args with $1
 {
-	caller 0
+	return 5
 }
 
-echo " `function1` "
+function1 
+echo $?
 
 caller 0

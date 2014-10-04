@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define rows 100
+#define ROWS 100
 
 int main( int argc, char* argv[] )
 {
@@ -11,9 +11,11 @@ int main( int argc, char* argv[] )
 	int i;
 	FILE* f = fopen( "randomcsv.csv", "w" );
 
-	for( i = 0; i < rows; i++ )
+	for( i = 0; i < ROWS; i++ )
 		fprintf( f, "%d\t%d\n", i, rand() );
 	
 	fclose( f );	
+
+	return 0;
 
 }	

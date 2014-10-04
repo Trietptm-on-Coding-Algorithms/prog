@@ -3,7 +3,8 @@
 
 int main( int argc, char* argv[] )
 {
-	//Holds multiple data entries
+	//A struct holds multiple data entries in seperate areas
+		//typedef permanently defines date to be the struct
 	typedef struct
 	{
 		int year;
