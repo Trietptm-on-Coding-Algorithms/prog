@@ -2,8 +2,8 @@
 
 c_tools() {
 
-	sudo apt-get install gcc
-	sudo apt-get install cmake
+	sudo apt-get install -y gcc
+	sudo apt-get install -y cmake
 
 }
 
