@@ -1,0 +1,22 @@
+
+
+TAB
+	completes arguments
+
+CTRL+R
+	search command history
+
+CTRL+W
+	delete last word
+
+CTRL+U
+	delete whole line
+
+ALT+(B|F)
+	move by word
+
+ALT+K
+	kill to end of line
+
+CTRL+L
+	clear the screen

@@ -1,0 +1,10 @@
+
+
+set -x
+	helps for debugging output
+
+set -e 
+	abort on errors
+
+set -o
+	abort on pipe errors

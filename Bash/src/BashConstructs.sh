@@ -51,7 +51,6 @@ then
 	# `basename $0` is the script's filename
 	exit $E_WRONG_ARGS
 fi
-#!/bin/bash
 
 exec echo "Exiting \"$0\" at line $LINENO."
 # exec opens a new shell process to execute the command.
@@ -59,3 +58,8 @@ exec echo "Exiting \"$0\" at line $LINENO."
 echo "Never Echoes"
 
 exit 99
+
+( cd /some/other/dir && echo $(pwd) )
+#open a second directory. returns to current directory after subshell ends
+
+

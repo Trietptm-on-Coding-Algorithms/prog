@@ -1,0 +1,9 @@
+
+Bash Special Characters
+Pipe - pipes output to another commands
+	a | b
+> 0 takes output from left, then writes it to file on write
+< - takes and send input from file on right to program on left
+>> - takes the output of the command on the left, then appends it to the file on the right
+* - wildcard character. Represents one or more characters.
+! - accesses history

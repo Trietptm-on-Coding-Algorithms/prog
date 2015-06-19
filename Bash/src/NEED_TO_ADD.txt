@@ -1,0 +1,11 @@
+
+
+here documents
+	<<EOF
+
+
+demonstrate removing terminal's STDIN with
+	 < /dev/null
+
+
+

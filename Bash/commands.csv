@@ -1,38 +1,133 @@
-command_name,command description
-uptime, shows the amount of time system has been on
-date,shows the current date
-users,shows the users currently logged into machine
-pwd,prints working directory
-hostname,shows the computer's network name
-mkdir,make directory
-cd,change directory
-ls,list contents of directory
-rmdir,removes directory
-pushd,puts directory onto directory stack
-popd,pops directory from stack
-cp,copies a file
-mv,moves a file
-less,page through a file
-cat,prints the whole files
-xargs,execute arguments
-find,finds files
-grep,finds things inside of files
-man,read a manual page
-apropos,find what man page is right
-env,look at environemental variables
-echo,print some arguments
-export,exports a new set of environmental variables
-exit,exits the shell
-sudo, root powers
-chmod,change permission modifiers
-chown,change ownership
-touch,make empty files
-
-
-Bash Special Characters
-Pipe - pipes output to another commands
-	a | b
-> 0 takes output from left, then writes it to file on write
-< - takes and send input from file on right to program on left
->> - takes the output of the command on the left, then appends it to the file on the right
-* - wildcard character. Represents one or more characters.
+command_name,tags(pipe delimited),command description
+uptime,|server info|, shows the amount of time system has been on
+date,|dates|,shows the current date
+users,|server info|,shows the users currently logged into machine
+pwd,|dir control|,prints working directory
+hostname,|server info|shows the computer's network name
+mkdir,|dir control|,make directory
+cd,|dir control|,change directory
+ls,|file control|,list contents of directory
+rmdir,|dir control|,removes directory
+pushd,|dir control|,puts directory onto directory stack
+popd,|dir control|,pops directory from stack
+cp,|file control|,copies a file
+mv,|file control|,moves a file
+less,|file read|,page through a file
+cat,|file read|,prints the whole files
+xargs,,execute arguments
+find,,finds files
+grep,,finds things inside of files
+man,,read a manual page
+apropos,,find what man page is right
+env,|env control|,look at environemental variables
+echo,||,print some arguments
+export,,exports a new set of environmental variables
+exit,,exits the shell
+sudo,,root powers
+chmod,,change permission modifiers
+chown,,change ownership
+touch,,make empty files
+head,|file read|, read the first X lines in a file
+tail,|file read|, reads the last X lines in a file
+jobs,|job management|, list jobs
+fg,|job management|, move last job into foreground
+bg,|job management|, allows a suspended process in background to continue running
+ssh,|remote access|, remotely access another linux server
+chown,|file management|, change file owner
+chmod,|file management|, change file permissions
+du,|file management|, find disk usage
+ip,|network|, query network settings
+ifconfig,|network|, simpler command for network info
+dig,|network|, tries to resolve DNS request
+egrep,|files|, read the file looking for regex matches
+pstree,|process|, view process tree. use -p
+pgrep,|process|, grep for processes. -f for full info
+pkill,|process|, kill processes using regex
+kill,|process|, basic command to kill by process id
+nohup,|process|, use to let process run forever
+disown,|process|, use to let process run forever
+netstat,|network|port|, use to find processes using port. -plunt
+lsof,|network|, find open socket and files
+expr,|helper|, evaluates arithmetic or boolean expressions
+m4,|c lang|, macro processor
+screen,|terminal|, powerful terminal multiplexing and session persistence
+yes,|simple|, prints a string a lot
+cal,|date|, a calendar
+env,|execer|, executes a command using the environment
+look,|util|, find english words beginning with a string
+cut,|text|, data manipulation
+paste,|text|, data manipulation
+join,|text|, data manipulation
+fmt,|text|, formats text paragraphs
+pr,|text|, formats text into pages and columns
+fold,|text|, wraps lines of text
+column,|text|, format text into columns or tables
+expand,|text|, convert between tabs and spaces
+unexpend,|text|, convert between tabs and spaces
+nl,|text|, add line numbers
+seq,|math|, prints numbers
+bc,|math|, calulator
+factor,|math|, factor integer
+gpg,|encrypt|, encrypt and sign files
+toe,|terminal|, table of terminfo entries
+nc,|network|, network debugging and data transfer
+ngrep,|network|, grep for the network layer
+dd,|disk|, moving data between files or devices
+file,|file|, identify type of file
+stat,|file|, file info
+tac,|file|, print files in reverse
+shuf,|file|, random selection of lines from a file
+comm,|file|, compare sorted files line by line
+hd,|file|binary|, dump binary files
+bvi,|file|binary|, edit binary files
+strings,|file|binary|, extract text from binary files
+tr,|text|, character translation or manipulation
+iconv,|text|conversion|, conversion for text encodings
+uconv,|text|conversion|, conversion for text encoding
+split,|file|, split files
+csplit,|file|, split files
+7z,|file|compression|, file compression
+ldd,|c lang|, dynamic library info
+nm,|c lang|, symbols from object files
+ab,|web|, benchmarking web servers
+strace,|system|debug|, system call debugging
+mtr,|network|, better traceroute alternative
+cssh,|remote|, visual concurrent shell
+wireshark,|network|, packet capture
+tshark,|network|, network debugging
+host,|network|, DNS lookup
+dstat,|system|, system stats
+glances,|system|, high level multi subsystem overview
+iostat,|system|, CPU and disk usage stats
+htop,|system|, improved top
+last,|user|, login history
+id,|user|group|, user and group identity info
+sar,|system|, historic system stats
+iftop,|network|, top for network usage
+nethogs,|network|, network utilization by socket or process
+ss,|network|socket|, socket statistics
+dmesg,|system|log|, boot and system error messages
+hdparm,|disk|, sata/ata disk manipulation
+lsb_release,|linux|, linux distro info
+lshw,|system|hardware|, hardware information
+find,|file|search|, search for files
+lynx,|web|, command line browser
+xmlstarlet,|xml|data|, xml processor
+jq,|json|data|, json processor
+in2csv,|csv|data|, csv or excel processor
+csvcut,|csv|data|, csv or excel processor
+csvjoin,|csv|data|, csv or excel processor
+csvgrep,|csv|data|, csv or excel processor
+s3cmd,|aws|, amazon s3 command
+s4cmd,|aws|, amazon web services command
+aws,|aws|, amazon web services
+sort,|text|, sort text input
+uniq,|text|, unique items from text
+awk,|text|,  column based processor
+sed,|text|, editor
+rename,|file|, rename multiple files at once
+curl,|web|, send request to server
+wget,|web|, download files
+free,|memory|, free memory
+vmstat,|memory|, gives memory stat
+gdb,|c lang|, debugger for C. Lots of useful cases
