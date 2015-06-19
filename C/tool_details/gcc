@@ -1,0 +1,7 @@
+
+
+-Wall
+	enables most warnings
+
+-Werror
+	treats warnings as errors
