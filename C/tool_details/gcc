@@ -1,7 +1,26 @@
 
+Compile a single file:
+	Usage
+		gcc -o outputfilename filename.c
+
+
+-I(insert directory here) 
+	sets search path
 
 -Wall
 	enables most warnings
 
 -Werror
 	treats warnings as errors
+
+
+
+-g
+	adds debugging flags
+
+-std=gnu11
+	sets the standard
+
+-O3
+	optimization level three
+

@@ -1,0 +1,5 @@
+
+
+
+usage: ctags -R ./
+	create a tag file for directory
