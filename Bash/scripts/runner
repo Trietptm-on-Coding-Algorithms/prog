@@ -1,5 +1,0 @@
-sudo apt-get update
-sudo apt-get install -y gradle gradle-doc
-sudo apt-get install -y mongodb mongodb-dev mongodb-server mongodb-clients
-sudo apt-get install -y nodejs nodejs-dbg nodejs-dev
-sudo apt-get install -y npm

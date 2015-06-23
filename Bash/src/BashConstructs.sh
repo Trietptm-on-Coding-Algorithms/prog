@@ -1,65 +1,29 @@
 #!/bin/bash
 
-shopt -s cdspell
 #shopt changes shell options on the fly
-# cdspell will automatically correct directory names
-
-cd /hpme
-pwd
-#!/bin/bash
-
-. data/source.data
-
-echo $f_name
-echo $l_name
-echo $age
-#!/bin/bash
-
-exec echo "Exiting \"$0\" at line $LINENO."
-# exec opens a new shell process to execute the command.
-
-echo "Never Echoes"
-
-exit 99
-#!/bin/bash
-
 shopt -s cdspell
-#shopt changes shell options on the fly
-# cdspell will automatically correct directory names
 
-cd /hpme
-pwd
-#!/bin/bash
+# cdspell will automatically correct directory names. Only works in interactive
+#cd /hpms
 
-. data/source.data
+#The period is shorthand for sourcing.
+#It brings all variables from another script into the current scope
+#The line directly below this is useful for finding the dir where a script is stored
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+. $DIR/data/source.data
 
-echo $f_name
-echo $l_name
-echo $age
-#/bin/bash
+echo $f_name $l_name $age
 
-#error code
-E_WRONG_ARGS=99
-#test parameter
-Number_of_expected_args=2
-scripts_paramters="-a -h -m -z"
-echo $#
-
-if [ $# -eq $Number_of_expected_args ]
-then
-	echo "Usage: `basename $0` $script_paramters"
-	# `basename $0` is the script's filename
-	exit $E_WRONG_ARGS
-fi
-
-exec echo "Exiting \"$0\" at line $LINENO."
-# exec opens a new shell process to execute the command.
-
-echo "Never Echoes"
-
-exit 99
-
-( cd /some/other/dir && echo $(pwd) )
 #open a second directory. returns to current directory after subshell ends
+( cd /home && echo $(pwd) )
+echo $(pwd)
+
+
+# exec opens a new shell process to execute the command.
+exec echo "Exiting \"$0\" at line $LINENO."
+
+echo "Never Echoes"
+
+exit 99
 
 

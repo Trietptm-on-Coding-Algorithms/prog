@@ -32,3 +32,9 @@ else
 	echo "Else if"
 fi
 
+case "$variable" in
+	'') echo 'empty' ;;
+	'*') echo 'start' ;;
+esac
+! true
+	#not operator

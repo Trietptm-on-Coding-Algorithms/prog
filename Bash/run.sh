@@ -1,8 +1,13 @@
 #!/usr/bin/env bash
 
 
-echo "Running variables script::"
-./src/Variables.sh
-echo "::End variables script"
 
-echo "Running "
+
+echo -e "\e[1;36mRunning variables script::\e[0m"
+bash ./src/Variables.sh
+echo -e "\e[1;36m::End variables script\e[0m"
+
+echo -e "\e[1;36mRunning variables script::\e[0m"
+bash ./src/BashConstructs.sh
+echo -e "\e[1;36m::End variables script \e[0m"
+

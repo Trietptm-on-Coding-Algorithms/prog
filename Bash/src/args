@@ -1,5 +1,0 @@
-
-echo "$# is the number of args"
-echo -e "\n\n\n"
-echo "$*"
-echo "$@"

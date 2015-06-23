@@ -18,17 +18,30 @@ cpp_tools() {
 java_tools() {
 	sudo apt-get install ant
 	sudo apt-get install openjdk-7-jre openjdk-7-doc
-
-	
+	sudo apt-get install -y gradle gradle-doc
 }
 
-groovy() {
-	sudo apt-get install gradle gradle-doc
-	sudo apt-get install groovy groovy-doc
-}
 
 scala() {
 	sudo apt-get install scala
+}
+
+python() {
+
+	sudo apt-get install python-software-properties
+	
+}
+
+javascript() {
+
+	sudo add-apt-repository ppa:chris-lea/node.js
+
+	sudo apt-get update
+	sudo apt-get install nodejs
+	sudo apt-get install -y mongodb mongodb-dev mongodb-server mongodb-clients
+	sudo apt-get install -y nodejs nodejs-dbg nodejs-dev
+	sudo apt-get install -y npm
+
 }
 
 general_tools() {
@@ -72,7 +85,6 @@ vim_setup() {
 	fi
 } 
 
-mkdir ~/.TEMP
 
 sudo apt-get install vim
 sudo apt-get install git
@@ -82,12 +94,14 @@ sudo apt-get install curl
 #organization
 sudo apt-get install task
 
-c_tools
-cpp_tools
-java_tools
-groovy
-scala
-general_tools
+#c_tools
+#cpp_tools
+#java_tools
+#scala
+#general_tools
 
-vim_setup
-rm -rf ~/.TEMP
+#vim_setup
+
+
+sudo apt-get update
+
