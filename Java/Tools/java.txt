@@ -1,0 +1,11 @@
+
+
+
+-XX:+PrintCompilation
+-XX:+PrintInlining
+-XX:+PrintAssembly
+-XX:+LogCompilation
+
+-XX:-TieredCompilation
+-Xbatch
+--XX:+UnlockDiagnosticVNOptions

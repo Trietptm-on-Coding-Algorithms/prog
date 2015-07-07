@@ -1,0 +1,6 @@
+
+javap -cp target.jar com.package.path.ClassName
+	shows method signatures
+
+javap -C -cp target.jar com.package.path.Classname
+	shows actual bytecode
