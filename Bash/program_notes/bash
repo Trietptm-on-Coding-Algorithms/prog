@@ -1,0 +1,65 @@
+Bash has some special features
+
+* Bash Environment - Certain environmental variables are read by bash
+* Bash options - Special options affect how bash interprets commands
+* Bash Shortcuts - Shortcuts for interactive mode
+* Bash Special Characters - Special Characters for operations that save time
+
+Bash Environment
+----------------------------------
+$PS1
+	sets terminal prompt
+
+
+
+Bash Options
+----------------------------------
+set -x
+	helps for debugging output
+
+set -e 
+	abort on errors
+
+set -o
+	abort on pipe errors
+
+Bash Shortcuts
+--------------------------------
+TAB
+	completes arguments
+
+CTRL+R
+	search command history
+
+CTRL+W
+	delete last word
+
+CTRL+U
+	delete whole line
+
+ALT+(B|F)
+	move by word
+
+ALT+K
+	kill to end of line
+
+CTRL+L
+	clear the screen
+
+
+Bash Special Characters
+---------------------------------------------
+Pipe - pipes output to another commands
+	a | b
+> 0 takes output from left, then writes it to file on write
+< - takes and send input from file on right to program on left
+>> - takes the output of the command on the left, then appends it to the file on the right
+* - wildcard character. Represents one or more characters.
+! - accesses history
+
+
+Brace Expansion
+	{1..10..2}
+	1 3 5 7 9
+	{a..z}
+	abcdefgh..z

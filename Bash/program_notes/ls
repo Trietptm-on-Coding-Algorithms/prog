@@ -1,0 +1,5 @@
+
+-t sorts by modification time
+-r reverse ordering
+-l includes filesize
+-h human readability for filesize
