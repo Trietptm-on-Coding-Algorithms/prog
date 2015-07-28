@@ -1,6 +1,10 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+
+
+
+
 void data_type_demonstration();
 
 void simple_data_types();
@@ -40,35 +44,40 @@ void integer_data_type() {
 	//Integers only have the standard operations defined upon them
 	// + - * / modulo with percent .
 
-	short shorty;
-	short int shortint;
-	signed short signshort;
-	signed short int signshortint;
-	unsigned short ushort;
-	unsigned short int ushortint;
-	int inty;
-	signed int signint;
-	unsigned int uint;
-	long longy;
-	long int longyint;
-	signed long slong;
-	signed long int slongint;
-	unsigned long ulong;
-	unsigned long int ulongint;
-	long long ll;
-	long long int llint;
-	signed long long sll;
-	signed long long int slli;
-	unsigned long long ull;
-	unsigned long long int ulli;
+	short shorty = 1;
+	short int shortint = shorty + 1;
+	signed short signshort = shorty + shortint + 1;
+	signed short int signshortint = shorty + shortint + signshort + 1;
+	unsigned short ushort = shorty + signshortint;
+	unsigned short int ushortint = ushort + 5;
+	int inty = 500 + ushortint;
+	signed int signint = inty * 50;
+	unsigned int uint = signint + 10;
+	long longy = uint * 10;
+	long int longyint = longy + 50;
+	signed long slong = longyint;
+	signed long int slongint = slong;
+	unsigned long ulong = slongint;
+	unsigned long int ulongint = ulong;
+	long long ll = ulongint;
+	long long int llint = ll * 2;
+	signed long long sll = llint * -1;
+	signed long long int slli = sll * 10;
+	unsigned long long ull = 500000 + slli;
+	unsigned long long int ulli = ull;
+
+	ull = ulli;
+	
+	printf("Long: %llu", ulli);
 
 }
 
 void real_data_type() {
-	float floaty;
-	double dbl;
-	long double ldbl;
-
+	float floaty = 3.14;
+	double dbl = 2.718;
+	long double ldbl = floaty * dbl;
+	
+	printf("Double : %1.5LF", ldbl);
 }
 
 void char_data_type() {
@@ -78,16 +87,18 @@ void char_data_type() {
 	signed char schar = 's';
 	unsigned char uchar = 'u';
 
+	printf("%c%c%c", char1, schar, uchar);
+
 	char chararr[] = "Array of characters is a string";
 	char* charpnt = chararr;
 
 	int i;
 	printf( "Iterate with for loop:\n" );
-	for( i = 0; i <= sizeof(chararr); i++ ) {
-		printf( "%c %c", chararr[i], *charpnt++);
+	for( i = 0; i < sizeof(chararr); i++ ) {
+		printf( "%c %c\n", chararr[i], *charpnt++);
 	}
 
-	printf( "\nChar c +1: %c\n", char1+1 );
+	printf( "\nChar c + 1 = %c\n", char1+1 );
 }
 
 
