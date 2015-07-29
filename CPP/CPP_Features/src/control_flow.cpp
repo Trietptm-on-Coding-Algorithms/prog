@@ -1,5 +1,6 @@
 #include <iostream>
 
+
 int addThree( int int1 = 1, int int2 = 2, int int3 = 3 ) {
 	//all paramters are local variables
 		//strict pass by value unless you are passing address

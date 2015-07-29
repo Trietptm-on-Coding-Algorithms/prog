@@ -1,4 +1,9 @@
 cmake_minimum_required(VERSION 2.6)
 
 project (CPP_Features)
-add_executable(CPP_Features ./src/main.cpp)
+
+file(GLOB CPP_Features
+	"src/*.hpp"
+	"src/*.cpp"
+	)
+add_executable(CPP_Features ${CPP_Features})
