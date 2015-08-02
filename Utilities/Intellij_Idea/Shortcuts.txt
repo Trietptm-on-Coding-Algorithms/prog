@@ -1,0 +1,112 @@
+
+
+CTRL+n
+	search for classes
+
+AR will search for classes with AR as the initials for camel case
+
+Type in any window for searching
+
+SHIFT SHIFT search anywhere
+
+ALT+7
+
+CTRL+SHIFT+N
+	search for files
+	use initial / to target specific folder
+
+CTRL+F12
+	like alt+7 but it lets you go directly to members
+
+
+hide navigation bar
+	ALT+HOME 
+		shortcut to show current path
+
+ALT+INSERT
+	creates a new file
+
+SHIFT+CTRL+E
+	look at recent files
+
+CTRL+TAB
+	quick switch
+
+CTRL+B
+	see declaration in editor
+
+CTRL+SHIFT+I
+	see declaration in popup window
+
+CTRL+P 
+	see parameters for method
+
+CTRL+U
+	show super methods
+
+CTRL+ALT+B
+	show different implementations of a method
+
+ALT+(left arrow or right arrow)
+	move back and forth
+
+CTRL+SHIFT+F7
+	highlight all usages in a file
+	on a return. It shows all returns
+	on a throw. It shows all throws
+
+CTRL+SHIFT+F12
+	remove all tool windows
+
+Press and hold alt to see all tool window
+
+CTRL+SHIFT+A
+	search through all possible commands
+
+shift+F4
+	open file in a seperate window
+
+CTRL+SHIFT+(LR arrows)
+	adjust size of pane
+
+CTRL+.
+	folding
+
+CTRL+W
+	expand selection
+
+CTRL+SHIFT+ENTER
+	complete statement
+	useful for closing brackets
+
+CTRL+D
+	duplicate line
+
+CTRL+SHIFT+V
+	see list of recently copied items
+
+With highlighted section
+	SHIFT+ALT+(u/d arrows)
+		move highlighted section
+
+CTRL+ALT+L
+	reformat code
+
+Live templates
+	can create macros
+	psvm<TAB> will create main declaration
+
+CTRL+SHIFT+SPACE
+	smart completion
+
+
+alt+enter 
+	create a testClass with this shortcut
+
+F2 to show next error
+
+Structural Search
+	inspect code using generic patterns
+
+Productivity Guide
+	Shows the features that you are using and not using
