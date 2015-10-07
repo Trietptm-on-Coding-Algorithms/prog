@@ -1,0 +1,26 @@
+
+
+psql -h foo.tld -p 5432 -U web_admin -d wordpress
+	Logs into a server foo.tld on port 5432 with user account web_admin and database wordpress
+
+\list 
+	show all databases
+
+\c database
+	connect to "database"
+
+\dt
+	show tables in database
+\d+ table1;
+	describe table1
+
+\dt+
+	show tables with info
+
+\dt schema_xyz.*
+	show tables in schema schema_xyz
+
+\e
+	show last executed query
+
+pg_dump <DB_NAME> -Fc -U userAccount > fileName
