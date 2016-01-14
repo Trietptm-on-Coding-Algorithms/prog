@@ -58,7 +58,7 @@ CUSTOM_START_SCRIPT_PATH="/usr/local/lib/${BASE_FILE_NAME}/idea_starter.sh"
 echo "${START_SCRIPT}"
 
 echo "#!/usr/bin/env bash"  | sudo tee "$CUSTOM_START_SCRIPT_PATH" > /dev/null
- echo "(nohup /usr/local/lib/${BASE_FILE_NAME}/bin/idea.sh 2> /dev/null & )" | sudo tee --append   "$CUSTOM_START_SCRIPT_PATH" > /dev/null
+echo "(nohup /usr/local/lib/${BASE_FILE_NAME}/bin/idea.sh &> /dev/null & )" | sudo tee --append   "$CUSTOM_START_SCRIPT_PATH" > /dev/null
 
 sudo chmod 555 "${CUSTOM_START_SCRIPT_PATH}"
 sudo ln -s  "${CUSTOM_START_SCRIPT_PATH}" "/usr/local/bin/idea"
