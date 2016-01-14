@@ -1,0 +1,4 @@
+a small program that starts a program and immediately disowns the process
+
+example:
+	nohup longrunningscript.sh

@@ -1,0 +1,23 @@
+
+@command - do not echoo
+
+CLS - clears the screen of any previous data
+
+CALL - calls another batch file
+
+BREAK ON/OFF - controls whether a use can break or not
+
+GOTO - go to a label
+     :label1
+
+PAUSE - waits for user to press a key
+
+REM - remark 
+
+ECHO ON - all commands are shown to use
+
+ECHO OFF - all commands are not shown to user
+
+echo "statement" - echoes statement
+
+end - ends the batch file

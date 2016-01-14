@@ -1,0 +1,85 @@
+#!/bin/sh
+exec scala "$0" "$@"
+!#
+
+
+
+object basics {
+	def getAnonAdder() = (x: Int, y:Int) => x+y
+	def partialInc() = getAnonAdder()(1,_:Int)
+	def curryStyle(m:Int)(n:Int): Int = m*n
+
+	def variableLengthArgs(args: String*) = {
+		args.map { arg => arg.capitalize }
+	}
+}
+
+class Calculator {
+	var acc = 0
+	val brand: String = "HP"
+	def add(m:Int, n:Int): Int = m+n
+	def minc = { acc += 1 } //method
+	def finc = { () => acc += 1  } //function
+} 
+
+case class CalculatorShort(brand: String, model: String)
+
+trait Car {
+	val brand: String
+}
+
+class Foo {}
+
+object FooMaker {
+	def apply() = new Foo
+}
+
+
+
+
+object HelloWorld {
+	def main(args: Array[String]) {
+		println("Hello World" +
+			 args.toList)
+
+		var calc = new Calculator
+		val foooer = FooMaker()
+
+		val numbers = List(1,2,3,4)
+		val numberSet = Set(1,1,2)
+		val hostPort = ("localhost", 80)
+		val hostPortShort = "localhost" -> 80
+		val host,port =  hostPort
+		val mapp = Map( 1->2, 3->5)
+		val opt:Option[Int] = mapp.get(5)
+		println("Option"+opt.getOrElse(0))
+
+		println(numbers.map((i: Int) => i*2))
+
+		println( foooer match {
+			case i if i == 1 => "Second One"
+			case fff: Foo => "Foo"
+			case _ => "Unknown"
+		})
+
+		var calc2 = new CalculatorShort("Hp", "20b")
+
+		println( calc2 match {
+			case CalculatorShort("asd", "zzz") => "random"
+			case CalculatorShort(ourB, ourM) => "Calculator: %s %s is of unknown type".format(ourB, ourM)
+		})
+
+		println(calc.brand + "::" + calc.add(5,3))
+
+		println(basics.partialInc()(5))
+		println(basics.curryStyle(5)(5))
+		println(basics.variableLengthArgs("helloworld","asd"))
+
+
+
+		//val x = new IntSet
+	}
+}
+
+
+HelloWorld.main(args)

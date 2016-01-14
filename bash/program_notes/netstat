@@ -1,0 +1,10 @@
+
+sudo netstat -plunt 
+    shows the processes and the ports that they are bound to
+
+sudo netstat -lnp
+    Shows all server connections
+
+
+
+

@@ -1,0 +1,3 @@
+readelf is for reading binary files
+
+readelf -s libc.so

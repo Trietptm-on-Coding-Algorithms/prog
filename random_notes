@@ -1,0 +1,65 @@
+Operating System Duties
+Manage underlying hardware
+Restrict access to appropriate users
+Manage users
+Execute programs in safe and efficient manner
+
+Vocab
+Kernel - the software interface that manages the hardware
+Monolithic Kernel - a kernel that handles all hardware interactions
+
+
+
+
+
+
+Computer Science Links
+========
+
+
+ICSE Intro Video
+	https://www.youtube.com/watch?v=20BySC_6HyY
+Perfectly executing wrong plan
+https://www.youtube.com/watch?v=9TJTbRw4ri8
+
+Clean architecture
+https://www.youtube.com/watch?v=Nltqi7ODZTM
+
+Birth and death of JavaScript
+https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript
+
+Alan key complexity
+http://www.youtube.com/watch?v=ubaX1Smg6pY
+
+Rich Hickey simple made easy
+http://www.infoq.com/presentations/Simple-Made-Easy
+
+We don't know how to compute
+http://www.infoq.com/presentations/We-Really-Dont-Know-How-To-Compute
+
+Wat
+https://www.youtube.com/watch?v=20BySC_6HyY
+
+
+
+
+
+Networking and Switching
+
+Basics Certs: Net+ & CCENT Net+: Teaches you ISO Model, different types of networks, old and new, and overall generalities
+
+CCENT: Same as Net+, but gears you into the Cisco realm of things, but again I lean more towards Net+ because it made the CCNA reading material much easier (others will disagree, but overall choice is up to you).
+
+Cisco: CCNA, CCNP, and CCIE[4] Remember Cisco is the de facto in routing and switching, period. Their tests are meticulous, tedious, and not for the faint of heart. You really do need to do all of the labs, read the book at least a few times, and highly recommend going to a class. For the CCNA, CCNP, and CCIE classes and test can run you up to $5,000 to $10,000 from a respectable certification trainer and take up to two years to get (anyone have better stats?). http://www.cisco.com/web/learning/certifications/index.html
+
+If you're not a Cisco guy, then check out Juniper at least.
+
+CCNA - Difficulty: 4/10. Rank: Above noob - The Associate level of Cisco Certifications can begin directly with CCNA for network installation, operations and troubleshooting or CCDA for network design. Think of the Associate Level as the foundation level of networking certification. ** AKA you're still a noob, but you know whats going on inside a Cisco box/network and can configure the things. And you might land a job at $40k a year at an ISP.** How to get started[5]  https://www.youtube.com/watch?v=dek5EbKQIVQ
+
+CCNP - Difficulty: 6/10. Rank: Professional - The Professional level is an advanced level of certification that shows more expertise with networking skills. Each certification covers a different technology to meet the needs of varying job roles. ** AKA - You know what you're talking about and considered a Professional. Most IT admins stop here because most of the time in their career, there isn't any need to go up any further.** How to get started[6]  https://www.youtube.com/watch?v=4VzayVz4RaU
+
+CCIE - Difficulty: 8-9/10. Rank: Expert - The Cisco Certified Internetwork Expert (CCIE) certification is accepted worldwide as the most prestigious networking certification in the industry. Extremely difficult certification and really for senior ISP or large company admins or MSPs [How to get started](https://www.youtube.com/watch?v=fwKiNTnY7Cc[7]  )
+
+CCAr - Difficulty: 10/10. Rank: Super Saiyan - Cisco Certified Architect is the highest level of accreditation achievable and recognizes the architectural expertise of network designers who can support the increasingly complex networks of global organizations and effectively translate business strategies into evolutionary technical strategies.You just went Super Saiyan, what more do I need to say? As far as I've read and heard this is about as hard as a lot of tests get (outside of the MS Architect, which is like $30k just to take the test and has a high failure rate) and just for the test it is $15k+ and $3,400 for the retake. I don't know how much the class goes for, but best of luck, if you ever reach that level.
+
+Linux Administration Basics: Linux Admins, please chime in on more required knowledge to be added. Linux Servers - RedHat, Debian, SSH, Apache, Rsync, CLI Terminal (mandatory), VIM/Nano, File System structure, apt-get, formatting and adding hard drives, Grep, Piping are the basics, and the basics of BASH. If you can't figure out any of these by Googling all the step by step HowTos and YouTubes, you'll never be a Linux Admin. Linux isn't that hard, unless you go full god-mode. And lastly, for the love of Obama. LEARN OPEN-SOURCE. This how the world is built nowadays and linux is driven by it.

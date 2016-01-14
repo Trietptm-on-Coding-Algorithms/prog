@@ -1,0 +1,3 @@
+
+sudo nc -z 127.0.0.1 5432
+    This will test whether port 5432 is open for 127.0.0.1. It will return immediately if it is open.

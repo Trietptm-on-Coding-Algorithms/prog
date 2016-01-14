@@ -1,0 +1,3 @@
+nm is used to find symbols in a .o or .a file
+
+nm libc.a

@@ -1,0 +1,3 @@
+Nmap explores networks and find services running on that network
+
+nmap 192.168.1.*

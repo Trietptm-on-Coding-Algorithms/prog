@@ -1,0 +1,3 @@
+Tee duplicates the stream by writing one to a file on disk and prints to stdout
+
+echo "ASD" | tee log

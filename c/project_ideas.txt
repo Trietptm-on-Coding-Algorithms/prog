@@ -1,0 +1,13 @@
+
+Intermediate to Advanced C Topics
+	http://www.eskimo.com/~scs/cclass/int/top.html
+
+Project Ideas
+
+netcat clone
+	send stdin -> socket
+	read from socket -> stdout
+basic web server
+	should be less than 500 lines
+implement ping
+implement tracert

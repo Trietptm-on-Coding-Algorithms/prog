@@ -1,0 +1,14 @@
+
+
+Tools
+======
+Bpython
+
+
+import sys
+
+import <MODULE>
+
+sys.modules['<MODULE>'].__file__
+
+<<above will print path to module>>

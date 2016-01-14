@@ -1,0 +1,67 @@
+Wireshark
+Fiddler
+
+ipconfig
+     ipconfig /all - all tcp/ip information
+     ipconfig /displaydns -shows local DNS cache
+     ipconfig /flushdns - clears local DNS cache
+systeminfo
+     systeminfo /S system /U user - connect to a machine remotely
+
+tasklist - a list of all tasks
+
+taskkill
+     taskkill /pid PID
+     taskkill /im IMAGENAME
+
+type - reads a text document
+
+netstat - lists current connections with computer
+net - used to fix network setting
+     net stop server
+     net start server
+     net start - display running services
+     net use m: \\networkdrive\drive {/delete}
+     net accounts
+     net print
+     net share
+nslookup
+     nslookup server NAME - allows you to specify a DNS server
+ping
+tracert
+gpresult - verifies all policy settings for user or computer
+     gpresult /S system /U user - connects to another computer
+netsh - can configure interfaces, routing protocols, filters, routes, remote access behavior, and display current configuration
+     netsh firewall set opmode disable
+     netsh firewall seticmpsetting 8 enable
+     netsh interface ip set address "Local Area Connection" dhcp
+
+
+Arp  Displays and modifies the IP-to-Physical address translation tables used by Address Resolution Protocol (ARP).
+
+Finger Displays information about a user on a specified remote computer or system that is running the Finger service. The output varies on the remote system.
+
+Get MAC Address (Getmac.exe) Displays the Media Access Control (MAC) address for all network cards either locally or across a network.
+
+Hostname (Hostname.exe) Display the name of the current host. Note: It does not display the computers fully qualified domain name (FQDN).
+
+IP Configuration Utility (Ipconfig.exe) Displays all current Transmission Control Protocol/Internet Protocol network configuration values, and refreshes Dynamic Host Configuration Protocol (DHCP) and DNS settings.
+
+Name Server Lookup (Nslookup.exe) Displays information about Domain Name System records for specific IP addresses and host names for troubleshooting DNS problems. Check records, domain host services, domain host aliases, and operating system information by querying DNS servers.
+
+Net services commands (Net.exe) Performs a broad range of network tasks that is use to set, view, access and determine the network settings. Type net with no parameters (or by using net /?) to see the full list of available command-line options.
+
+Netstat (Netstat.exe) Displays active TCP connections, ports on which the computer is listening, Ethernet statistics, the IP routing table, and protocol statistics for IPv4/IPv6. Click Here to read the article for viewing the current connection.
+
+Network Command Shell (Netsh.exe) Displays and modifies the network configuration of a currently running local or remote computer using thirteen sets of commands called contexts for performing a wide range of network configuration.
+
+PathPing (Pathping.exe) Trace a path to a remote system and report packet losses at each router along the way to identify problems at a router or network link.  Basically, It combines the functions of Traceroute and Ping.
+
+TCP/IP NetBIOS Information (Nbtstat.exe) is a command-line tool to troubleshoot NetBIOS name-resolution problems. It Displays statistics for the NetBIOS over TCP/IP (NetBT) protocol, NetBIOS name tables for both the local computer and remote computers, and the NetBIOS name cache.
+
+TCP/IP Ping (Ping.exe) This is a very useful tool that verifies (IP-level) connectivity to another computer or internet address by sending Internet Control Message Protocol (ICMP) packets and measuring response time in milliseconds.
+
+TCP/IP Route (Route.exe) Displays and modifies entries in the local IP routing table.
+
+TCP/IP Traceroute (Tracert.exe) Determines the path to an internet address, and lists the time required to reach each hop. It’s useful for troubleshooting connectivity problems on specific network segments.
+

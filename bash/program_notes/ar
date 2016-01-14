@@ -1,0 +1,3 @@
+ar reads binary archive files(*.a)
+
+ar tf *.a

@@ -1,0 +1,71 @@
+get-alias - gets all aliases that can be used in powershell
+get-acl - get current directory and user
+get-commands - print all commands to the command line
+get-date
+
+
+get-commands
+     get-command -Verb (get|add|new|clear|set)
+
+
+Page Up – Jumps to the first command in the history buffer.
+Page Down – Jumps to the last command in the history buffer.
+Up Arrow – goes back one command in the history buffer.
+Down Arrow – goes forward one command in the history buffer.
+Home – Jumps to the beginning of the command line.
+End – Jumps to the end of the command line.
+Ctrl+LeftArrow – goes to the left one word at a time. (In the console type –PowerShell tutorial lesson 1)
+Ctrl+RightArrow – goes to the right on word at a time. (In the console type –PowerShell tutorial lesson 1)
+Tab – Completes input (in the console type get-c and press tab, press tab again…).
+F7 – Shows history buffer (use the up and down arrow keys to navigate the buffer).
+
+get-service stop-service start-service
+
+use set-alias newname command to alias specific commands
+
+get-location
+set-location
+copy-item
+remove-item
+move-item
+rename-item
+new-item
+clear-item
+set-item
+mkdir
+get-content
+set-content
+
+
+
+
+powershell providers provide access to things that would be difficult to access from the command line.
+
+use get-psproviders to see the provider list
+use get-psdrive to see providers
+
+set-location drive:
+
+command for complex filtering
+     Get-ChildItem | Where-Object {$_.name -like “R*”}<enter>
+     Get-ChildItem OS | Format-List *<enter>
+
+
+Get-Location	gl	pwd	Current Directory.
+Set-Location	sl	cd, chdir	Change current directory.
+Copy-Item	cpi	copy	Copy Files.
+Remove-Item	ri	del	Removes a File or directory.
+Move-Item	mi	move	Move a file.
+Rename-Item	rni	rn	Rename a file.
+New-Item	ni	n/a	Creates a new empty file or folder.
+Clear-Item	cli	n/a	Clears the contents of a file.
+Set-Item	si	n/a	Set the contents of a file.
+Mkdir	n/a	md	Creates a new directory.
+Get-Content	gc	type	Sends contents of a file to the output stream.
+Set-Content	sc	n/a	Set the contents of a file.
+
+
+
+http://www.powershellpro.com/powershell-tutorial-introduction/powershell-providers/
+
+good tutorials

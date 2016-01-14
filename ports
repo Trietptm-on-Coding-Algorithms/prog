@@ -1,0 +1,14 @@
+7:: echo
+9::discard
+13::daytime
+19::chargen
+21::ftp
+22::ssh
+23::telnet
+25::smtp
+37::time
+53::domain
+79::finger
+80::http
+110::pop
+111:sunrpc

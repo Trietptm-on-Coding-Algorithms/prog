@@ -1,0 +1,4 @@
+Scp is used to transfer files from one computer to another
+
+#Takes file from the host and moves it to the current directory
+scp username@host:file ./file

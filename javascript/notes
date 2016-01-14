@@ -1,0 +1,88 @@
+
+Online validators
+     http://validator.w3.org/
+     http://jigsaw.w3.org/css-validator/
+
+
+
+
+Javascript libraries
+
+
+YUI - javascript helper functions and css
+JQuery - javascript library for browser functions
+
+
+underscore.js - functions similar to functional programming
+wu.js
+     functional library
+    
+    
+    
+Angular.js
+     MVVM framework for in browser
+          medium sized framework with long history
+Ember.js
+     MVVC framework for clientside
+          large framework, full featured, relatively new
+backbone
+     small framework for client side application
+    
+    
+    
+Tangle.js
+     js library for creating reactive documents
+    
+Snap.svg
+     javascript library for creating vector graphics
+    
+    
+SJCL
+     Stanford javascript crypto library
+    
+    
+Howler.js javascript library for HTML5 sound
+
+Sigma.js
+     js library for making graphs
+    
+    
+SQuel
+     javascript libraries for building sql queries
+    
+    
+Zebra
+     javascript library for desktop like element
+    
+Reactor.js
+     framework for reactive variables
+    
+Parallel.js
+     framework for parallel programming
+    
+Bootbox
+     pop up dialog
+    
+SVG.js
+     library for vector graphics
+    
+Packery
+     layout manager.
+     Unique because it "packs" everything together
+    
+ExtJS
+    
+    
+session.js
+
+JS lib for sidebar transitions
+http://tympanus.net/Development/SidebarTransitions/
+
+
+base2
+     dom manipulator
+          implements w3c 
+
+
+Computer vision lib
+	http://trackingjs.com/

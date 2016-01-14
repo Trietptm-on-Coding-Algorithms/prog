@@ -1,0 +1,31 @@
+#!/bin/bash
+
+set -e
+
+EXE_NAME="datar"
+COMPILER_NAME="g++"
+FLAGS="-std=c++11 -I./src"
+
+echo $@
+
+rm -rf datar || echo "datar not found for deletion"
+rm -r src/*.o || echo "object files not found for deletion"
+
+#"$COMPILER_NAME $FLAGS src/main.cc -o build/dist/$EXE_NAME"
+#"$COMPILER_NAME" "$FLAGS" ./src/main.cc -o ./build/dist/$EXE_NAME
+
+echo "Compile dbee.h"
+args="./src/dbee.h -o ./src/dbee.o"
+eval "$COMPILER_NAME" $args
+
+echo $?
+
+
+
+echo "Compile main.cc"
+args="./src/main.cc -o $EXE_NAME"
+exec "$COMPILER_NAME" $args
+#echo "$COMPILER_NAME" $args | exec
+
+
+ls -la  datar

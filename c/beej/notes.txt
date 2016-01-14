@@ -1,0 +1,5 @@
+
+
+Two socket types
+	Stream socket = SOCK_STREAM
+	Datagram socket =  SOCK_DGRAM

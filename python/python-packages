@@ -1,0 +1,9 @@
+python-scientific
+python-scientific-doc
+python-scipy
+python-scipy-dbg
+python-sympy
+ipython
+ipython-doc
+ipython-notebook
+ipython-qtconsole

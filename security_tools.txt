@@ -1,0 +1,4 @@
+
+Nessus -  network based vulnerability tool
+Pass-the-hash - tool to break password hashes
+Cain and Abel - password recovery, network sniffing, wireless scanning and VoIP

@@ -1,0 +1,13 @@
+man 3 puts
+man 3 printf
+	nice docs
+
+
+if the file is called "asd.c"
+	"make asd" will compile "asd"
+	will infer based on file ending C++
+	will read env variables
+		"export CFLAGS="-Wall""
+
+
+valgrind ./prog

@@ -1,0 +1,3 @@
+
+sudo route -n
+    This will show the kernel's ip routing table

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+#qemu-img create centos.img 10G
+qemu-system-x86_64 -m 2048 -hda centos.img -cdrom CentOs.iso/CentOS-7-x86_64-Minimal-1503-01.iso  -boot d -k en-us
