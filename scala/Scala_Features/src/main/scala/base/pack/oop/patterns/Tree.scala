@@ -1,3 +1,4 @@
+package base.pack.oop.patterns
 
 abstract class Tree
 	case class Sum( l: Tree, r: Tree ) extends Tree

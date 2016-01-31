@@ -13,12 +13,16 @@ object variables {
 
     
     var in: Scanner = new Scanner(System.in)
-    var input = "5"
+    var i = 0
+    var data = Array("1", "2", "5", "6", "q")
+    var input = data(i)
 
+    //A lot of java syntax is valid scala. There are some differences
     while (input != "q") {
       a = java.lang.Integer.parseInt(input)
       println(ys)
-      input = in.nextLine;
+      input = data(i)
+      i+=1
     }
   }
 }

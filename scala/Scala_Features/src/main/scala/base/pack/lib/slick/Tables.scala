@@ -1,5 +1,4 @@
-import scala.slick.driver.PostgresDriver.simple._
-import scala.slick.lifted.{ProvenShape, ForeignKeyQuery}
+package base.pack.lib.slick
 
 
 class Suppliers( tag: Tag) 

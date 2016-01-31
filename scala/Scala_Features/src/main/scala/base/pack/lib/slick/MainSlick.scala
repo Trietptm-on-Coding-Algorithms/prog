@@ -1,8 +1,10 @@
+package base.pack.lib.slick
 
-import scala.slick.jdbc.{GetResult, StaticQuery => Q}
-import scala.slick.driver.PostgresDriver.simple._
 
-object slick_main extends App {
+import scala.slick.jdbc.{StaticQuery => Q}
+import scala.slick.lifted.TableQuery
+
+object MainSlick extends App {
   
   println("Beginning testing")
 
@@ -30,7 +32,7 @@ object slick_main extends App {
   val allSuppliers: List[(Int, String, String, String, String, String)] = suppliers.list
 
   coffeesInsertResult foreach { numRows => 
-    println("Inserted $numRows rows into the Coffees table")
+    println("Inserted $numRows rows into the base.pack.lib.Slick.Coffees table")
   }
 
   println("Generated SQL for base Coffes query:\n" + coffees.selectStatement)

@@ -10,5 +10,15 @@ repositories {
 dependencies {
     compile 'org.scala-lang:scala-library:2.11.1'
     compile 'commons-collections:commons-collections:3.2'
+
+    compile 'com.typesafe.slick:slick_2.10:2.0.2'
+    compile 'postgresql:postgresql:9.1-901.jdbc4'
+
+    /* Some Dependencies
+
+
+
+    */
+
     testCompile 'junit:junit:4.12'
 }

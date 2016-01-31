@@ -3,4 +3,5 @@
 *ipr
 .gradle
 build
+projectFileBackups
 

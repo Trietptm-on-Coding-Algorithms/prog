@@ -1,22 +1,34 @@
 #include <iostream>
+#include <string>
 
 
 #include "data_types.hpp"
+#include "control_flow.hpp"
+#include "userInteraction.hpp"
+
+void runDemo(bool val, std::string name, void(&f)());
+
+//main with cmd args
+//int main(int argc, char* argv[]) {
+int main() {
 
 
-int main(int argc, char* argv[]) {
-	std::cout << "Hello....." << std::endl;
 
-	for(int i = 0; i < argc; i++) {
-		std::cout << argv[i]  << std::endl;
-	}
-
-	std::string in;
-	std::cout << "Are you ready?" << std::endl;
-	std::cin >> in;
+	runDemo(controlflow::run, "Control Flow", controlflow::demo);
+	runDemo(userInteraction::run, "User interaction", userInteraction::demo);
 
 
-	cpp_demo::array_demo();
 
 	return 0;
+}
+
+
+void runDemo(bool val, std::string name, void (&f)()) {
+
+	if (val) {
+		std::cout << "\n\n\n\n\n" << name << " is starting" << "\n\n\n\n\n" << std::endl;
+		f();
+	} else {
+		std::cout << name << " is skipped." << std::endl;
+	}
 }
