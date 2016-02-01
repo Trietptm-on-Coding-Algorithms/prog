@@ -2,7 +2,7 @@
 
 #This script gives a high level overview of variables
 
-#all variables are represented as strings
+#all variables are strings
 #strings are casted into numbers in the appropriate circumstances
 a=5
 b=6
@@ -46,3 +46,12 @@ echo "Substring = ${variable1:6:6}"
 
 #Arrays
 arr=(1 2 3 4)
+
+#HereDoc - acts as stdin
+cat <<TEST_HERE_DOC
+I am a here doc
+i can be multiple lines
+I am useful for ssh
+TEST_HERE_DOC
+
+

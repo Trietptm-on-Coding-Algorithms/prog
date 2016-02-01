@@ -5,11 +5,12 @@ echo hello; echo there
 	#colon is a no operation. useful as a placeholder
 : > data.xxx
 	# equivalent to touch
+rm data.xxx
 
 
 
-{ echo I am Anon;
+( echo I am Anon;
 		echo but you still know my variables;
-		anon="Nobody"; }
+		anon="Nobody"; )
 
-echo $anon
+echo "Variable doesn't exist [[$anon]]"
