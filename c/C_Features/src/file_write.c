@@ -1,5 +1,6 @@
 
 #include <stdio.h>
+#include <stdlib.h>
 
 void basic_open_and_close_file();
 
@@ -38,6 +39,8 @@ void file_write_demonstration() {
 	//release resources back to the system
 	//fclose( f );
 	fclose( target );
+
+	system("rm failure.txt");
 }	
 
 void basic_open_and_close_file() {

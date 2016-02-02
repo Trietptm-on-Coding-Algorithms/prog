@@ -10,7 +10,7 @@ void data_type_demonstration();
 void simple_data_types();
 
 void integer_data_type();
-void real_number_data_type();
+void real_data_type();
 void char_data_type();
 void pointer_data_type();
 
@@ -22,8 +22,10 @@ void enum_data_type();
 void union_data_type();
 
 void data_type_demonstration() {
+	//Any data type that is supported by the compiler
 	simple_data_types();
 
+	//A data type that can be user defined
 	complex_data_types();
 }
 
@@ -31,8 +33,10 @@ void data_type_demonstration() {
 void simple_data_types() {
 	
 	//Integral numbers differ in sign and size
+	integer_data_type();
 	
 	//Real numbers differ in size
+	real_data_type();
 	
 	//char is single character
 	char_data_type();
@@ -83,6 +87,7 @@ void real_data_type() {
 void char_data_type() {
 
 	//Chars are represented by ints
+	//They are commonly used to represent raw bytes since they are fixed 1 byte wide
 	char char1 = 'c';
 	signed char schar = 's';
 	unsigned char uchar = 'u';
@@ -92,7 +97,7 @@ void char_data_type() {
 	char chararr[] = "Array of characters is a string";
 	char* charpnt = chararr;
 
-	int i;
+	unsigned int i;
 	printf( "Iterate with for loop:\n" );
 	for( i = 0; i < sizeof(chararr); i++ ) {
 		printf( "%c %c\n", chararr[i], *charpnt++);
@@ -134,7 +139,7 @@ void array_data_type() {
 	int arr[] = {1,2,3,4,5,6,7};
 	// causes an error arr[8];	
 	int *newarr;
-	newarr = malloc( sizeof(int)*8 ); //allocate new array of correct size
+	newarr = (int*) malloc( sizeof(int)*8 ); //allocate new array of correct size
 	*(newarr+7) = 51;
 	int int1;
 	for( int1 = 0; int1 < 8; int1++ ) {
@@ -176,6 +181,7 @@ void enum_data_type() {
 void union_data_type() {
 
 	//Unions allow multiple data entries to take up same memory
+	//Union behavior is undefined. Be very careful with this type. Probably better to avoid.
 	union number
 	{
 		int i;
