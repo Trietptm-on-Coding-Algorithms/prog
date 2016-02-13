@@ -1,3 +1,3 @@
 
-def wall():
-	print "on the wall"
+def funcInAnotherFile(n):
+    return n*7

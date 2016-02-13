@@ -1,4 +1,4 @@
 
 
-def take():
-	print "Take one down, pass it around"
+def funcFromSubDir(n):
+	return n * 11
