@@ -5,6 +5,7 @@
 #include "data_types.hpp"
 #include "control_flow.hpp"
 #include "userInteraction.hpp"
+#include "random.hpp"
 
 void runDemo(bool val, std::string name, void(&f)());
 
@@ -16,6 +17,8 @@ int main() {
 
 	runDemo(controlflow::run, "Control Flow", controlflow::demo);
 	runDemo(userInteraction::run, "User interaction", userInteraction::demo);
+	runDemo(randman::run, "Random stuff", randman::demo);
+
 
 
 

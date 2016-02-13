@@ -5,5 +5,7 @@ object Deriver {
 		case Sum(l, r) => Sum(derive(l, v), derive(r, v))
 		case Var(n) if (v == n) => Const(1)
 		case _ => Const(0)
+
 	}
+
 }

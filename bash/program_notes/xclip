@@ -1,0 +1,5 @@
+
+xclip -i
+	accept data from pipe. Use middle click in linux mint to paste
+	cat file.txt | xclip -i
+		<middle click>

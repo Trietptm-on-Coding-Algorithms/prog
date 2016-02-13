@@ -8,9 +8,12 @@ import scala.collection.mutable
   */
 object OopDemo {
 
-  //Scala has a unfied type hierachy
-  // instead of a bunch of independent types. Everything falls into a single hierarchy
-  //http://docs.scala-lang.org/resources/images/classhierarchy.img_assist_custom.png
+  /**
+    *   Scala has a unified type hierachy
+    * instead of a bunch of independent types. Everything falls into a single hierarchy
+    *
+    * http://docs.scala-lang.org/resources/images/classhierarchy.img_assist_custom.png
+    */
   class Test(v: Int)
 
   def anyTypeDemo() = {

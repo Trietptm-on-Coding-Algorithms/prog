@@ -1,4 +1,4 @@
-
+package base.pack.func.FunctionAreObjects
 
 object Timer {
 	def oncePerSecond( callback: () => Unit ) {
@@ -8,7 +8,7 @@ object Timer {
 		println( "time flies like an arrow..." )
 	}
 	
-	def main(args: Array[String]) {
+	def demo() {
 		oncePerSecond(timeFlies)
 	}
 }

@@ -150,4 +150,4 @@ rsynccrypto,|backup|, used to encrypt backups
 lftp,|ftp|, sophisticated ftp/sftp tool
 screen,|termtool|, terminal multiplexer
 tmux,|termtool|, terminal multiplexer
-
+xclip,|termtool|, copies things to xclipboard
