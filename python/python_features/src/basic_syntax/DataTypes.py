@@ -1,11 +1,16 @@
 
 def demo():
 
-	a = [1,23]
-	if isinstance(a, list):
-		print 'True'
-	else:
-		print 'False'
+    a = [1,23]
+    if isinstance(a, list):
+            print 'True'
+    else:
+            print 'False'
+
+    numbers()
+    string()
+    bools()
+    variableAssignmentSyntax()
 
 def numbers():
     #numbers are handled transparently
