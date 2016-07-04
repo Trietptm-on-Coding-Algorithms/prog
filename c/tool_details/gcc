@@ -7,20 +7,10 @@ Compile a single file:
 -I(insert directory here) 
 	sets search path
 
--Wall
-	enables most warnings
-
--Werror
-	treats warnings as errors
-
-
-
--g
-	adds debugging flags
-
--std=gnu11
-	sets the standard
-
--O3
-	optimization level three
-
+-Wall |enables most warnings
+-Werror |treats warnings as errors
+-pedantic
+-g |adds debugging flags
+-std=gnu11  | sets the standard
+-O3 =optimization level three
+-E = prints output from preprocessor stage

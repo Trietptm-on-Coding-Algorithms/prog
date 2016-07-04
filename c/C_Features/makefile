@@ -1,26 +1,27 @@
 TARGET=prog
-LIBS= -lm
 CC= gcc
-CFLAGS= -g -Wall -std=c11
+CFLAGS= -g -Wall -std=c11 -pthread
+BUILDDIR=build
 
-.PHONY: default all clean
+
+.PHONY: clean default 
 
 default: $(TARGET)
-all: default
+	mkdir build
+SOURCES := $(shell find src -name '*.c')
+OBJECTS= $(SOURCES:%.c=%.o)
+HEADERS= $(wildcard src/**/*.h)
 
-OBJECTS= $(patsubst src/%.c, src/%.o, $(wildcard src/*.c))
-HEADERS= $(wildcard src/*.h)
 
-
-%.o: %.c $(HEADERS)
+%.o: %.c $(OBJECTS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 .PRECIOUS: $(TARGET) $(OBJECTS)
 
 $(TARGET): $(OBJECTS)
-	$(CC) $(OBJECTS) $(CFLAGS) $(LIBS) -o $@
+	$(CC) $(OBJECTS) $(CFLAGS) -o $@
 
 
 clean:
-	-rm -f src/*.o
+	find ./src -regex ".*\.o" -exec rm {} \;
 	-rm -f $(TARGET)

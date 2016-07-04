@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include <string>
+
 template <class T>
 class templateTest
 {
@@ -36,4 +38,11 @@ void templateDemo()
 	tT.TestMethod();
 	tT.setMethod( 25 );
 	tT.TestMethod();
+}
+
+
+void constructorTypes() {
+	std::string s1; //default constructor
+	std::string s2 = s1; //copy initialize
+	std::string s3(s2); //direct initialization
 }

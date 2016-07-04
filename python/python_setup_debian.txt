@@ -26,3 +26,6 @@ python3-nose
 ipython3
 ipython3-notebook
 ipython3-qtconsole
+
+
+python3-psycopg2

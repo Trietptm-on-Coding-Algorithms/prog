@@ -12,10 +12,9 @@ long long int factorial( int max, int min);
 void launch( void * data );
 
 
-int main()
+void threadDemo()
 {
 	//setup variables
-	int factorialOf = Fx;
 	pthread_t thread[2];
 	struct ThreadData data[2];
 	int i;

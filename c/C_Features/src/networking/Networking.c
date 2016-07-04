@@ -1,33 +1,33 @@
+#define _POSIX_C_SOURCE 201112L
 #include <sys/types.h>
+
 #include <sys/socket.h>
 #include <netdb.h>
 #include <stdio.h>
 #include <string.h>
 #include <arpa/inet.h>
-#include <netinet/in.h>
 
-int main(int argc, char *argv[]) {
+void showIp() {
 
-	struct addrinfo hints, *res, *p;
+	struct addrinfo hints;
+        struct addrinfo	*res;
+        struct addrinfo *p;
 	int status;
 	char ipstr[INET6_ADDRSTRLEN];
+	char *address = "google.com";
 
 
-	if (argc != 2) {
-		fprintf(stderr, "usage: showip hostname\n");
-		return 1;
-	}
 
 	memset(&hints, 0, sizeof hints);
 	hints.ai_family = AF_UNSPEC; //AF_INETor AF_INET6 to force version
 	hints.ai_socktype = SOCK_STREAM;
 
-	if ( (status = getaddrinfo(argv[1], NULL, &hints, &res)) != 0) {
+	if ( (status = getaddrinfo(address, NULL, &hints, &res)) != 0) {
 		fprintf(stderr, "getaddrinfo: %s\n", gai_strerror(status));
-		return 2;
+		return;
 	}
 
-	printf("Ip addresses for %s:\n\n", argv[1]);
+	printf("Ip addresses for %s:\n\n", address);
 
 	for(p = res; p != NULL; p = p->ai_next) {
 		void *addr;
@@ -52,7 +52,6 @@ int main(int argc, char *argv[]) {
 
 	freeaddrinfo(res); // free the linked list
 
-	return 0;
 }
 	
 
