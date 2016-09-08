@@ -1,0 +1,6 @@
+
+curl -sSL https://get.rvm.io > rvm_install.sh
+bash rvm_install.sh
+
+#latest version as of 9/2016
+rvm install 2.3.1

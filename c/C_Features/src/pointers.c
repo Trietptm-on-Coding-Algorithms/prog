@@ -4,11 +4,34 @@
 
 static bool print = true;
 
+//Data setup. Arrays and pointers are very similar.
+//Arrays are a block of data. Pointers allow you to walk through the
+//block of data. A type of array similar to ages below is essentially
+//an int* pointing to the first element in the block.
 int ages[] = { 23,54,33,66,77};
-
 char *names[] = { "bob", "mob", "gob", "qob", "pob"};
-
 int sizeOfArray = 5;
+
+//describing pointers using simple language
+
+void pointerDefinitions() {
+	int val = 5;
+		//A pointer of int named ptr1
+	int *ptr1 = &val;
+		//The value of whatever ptr is pointed at
+	int a = *ptr1;
+
+	ptr1 = ages;
+
+		// the value of what ptr is pointed to offset by size
+	a = *(ptr1+sizeof(int));
+
+		//&a is the address of a
+	ptr1 = &a;
+		//increment where ptr points
+	ptr1++;
+
+}
 
 //This only works when the compiler can determine the size at compile time
 // otherwise sizeof(ages) will return the size of the pointer to the array

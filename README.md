@@ -1,7 +1,6 @@
+Prog
 
-Basic Progs
-
-This repository contains various programs and scripts that can be used for templates or experimentaion
+This repository contains sample scripts and code that can be used as a reference. 
 
 
 

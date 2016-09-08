@@ -2,6 +2,12 @@
 
 Tools
 ======
-Bpython
-ipython
+bpython - terminal editor for python code. Will execute code dynamically
+jupyter - multi purpose IDE for python code. Has cells to execute python code in cell.
+	* It is the python REPL on steroids.
+
+%matplotlib inline
+	shows all plots inline
+
+
 

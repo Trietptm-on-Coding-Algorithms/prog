@@ -12,32 +12,13 @@ void file_write_demonstration() {
 	//C cannot modify a text file. It can only copy a file and modify it	
 	FILE* target;
 
-	target = fopen( "failure.txt", "w" );
+	target = fopen( "test_file.txt", "w" );
 		
 	//setup the memory and calulation for spot in file to write failure to
-	//char TEMP[8];
-	//int delta_bytes = sizeof( "SUCCESS")*56;
-	//int success_bytes = sizeof( "SUCCESS\n" );
-
 	//write first half of file
-	/*
-	do {
-		//fgets( TEMP, success_bytes, f );
-		fputs( TEMP,  target );
-	} while ( ftell(f) < delta_bytes ); 
-*/
-	//write the changed line
-//	fgets( TEMP, success_bytes, f );
-	fputs( "FAILURE\n", target );
-/*
-	//write the second half of file
-	do {
-		//fgets( TEMP, success_bytes, f );
-		fputs( TEMP, target );
-	} while ( ftell(f) >= ftell( target )  );
-*/
+	fputs( "Data in the file\n", target );
+
 	//release resources back to the system
-	//fclose( f );
 	fclose( target );
 
 	system("rm failure.txt");

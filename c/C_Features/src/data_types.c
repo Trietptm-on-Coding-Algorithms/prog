@@ -2,51 +2,47 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include <string.h>
+
 
 
 
 void data_type_demonstration();
 
-void simple_data_types();
+//Simple data types
+void simple_data_types();//Compiler supported types
+void integer_data_type();//simple integers
+void real_data_type();//float and doubles
+void char_data_type();//a char
+void pointer_data_type();//a reference type
 
-void integer_data_type();
-void real_data_type();
-void char_data_type();
-void pointer_data_type();
-
-void complex_data_types();
-
-void array_data_type();
-void struct_data_type();
-void enum_data_type();
-void union_data_type();
+//Complex data types
+void complex_data_types();//Extensible types
+void array_data_type();//List
+void struct_data_type();//Collection of fields
+void enum_data_type();//Enumeration of values
+void union_data_type();//
 
 void data_type_demonstration() {
-	//Any data type that is supported by the compiler
-	simple_data_types();
-
-	//A data type that can be user defined
-	complex_data_types();
+	simple_data_types();//A data type with compiler support
+	complex_data_types();//A data type that can be user defined
 }
 
 
 void simple_data_types() {
 	
-	//Integral numbers differ in sign and size
-	integer_data_type();
+	integer_data_type(); //Integral numbers differ in sign and size
 	
-	//Real numbers differ in size
-	real_data_type();
+	real_data_type(); //Real numbers differ in size
 	
-	//char is single character
-	char_data_type();
+	char_data_type(); //char is single character
 
 }
 
 void integer_data_type() {
 
 	//Integers only have the standard operations defined upon them
-	// + - * / modulo with percent .
+	// + - * / %
 
 	short shorty = 1;
 	short int shortint = shorty + 1;
@@ -70,6 +66,9 @@ void integer_data_type() {
 	unsigned long long ull = 500000 + slli;
 	unsigned long long int ulli = ull;
 
+	//Some of the above types are represented identically
+	//on cpu architectures. Compilers may interpret the sizes
+	//differently on different architectures.
 	ull = ulli;
 	
 	printf("Long: %llu", ulli);
@@ -87,7 +86,8 @@ void real_data_type() {
 void char_data_type() {
 
 	//Chars are represented by ints
-	//They are commonly used to represent raw bytes since they are fixed 1 byte wide
+	//They are commonly used to represent raw bytes
+	//since they are fixed 1 byte wide
 	char char1 = 'c';
 	signed char schar = 's';
 	unsigned char uchar = 'u';
@@ -199,4 +199,18 @@ void union_data_type() {
 
 	//result is unpredictable if you assign a value to one and 
 	//try to grab value from another subvariable
+}
+
+
+
+void stringDemo() {
+	char* string1 = "I am data";
+	char* string1_copy = "I am data";
+	char* string2 = "I am not data";
+
+	int length = strlen(string1) + 1;
+	char * newLocation = malloc(sizeof(char)* length);
+
+	memcopy(&string1_copy, &newLocation, length);
+
 }
