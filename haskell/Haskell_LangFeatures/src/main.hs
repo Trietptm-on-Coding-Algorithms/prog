@@ -1,4 +1,8 @@
+module Main where
+import Lists
+import Func
 
-
-
-main = putStrLn "Hello World"
+main :: IO()
+main = do
+    Lists.execute
+    putStrLn "Hello World"

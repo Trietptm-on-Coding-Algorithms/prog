@@ -1,10 +1,11 @@
 
+module Lists 
+(
+    execute
+) where
 
-import System.Environment
 
-main :: IO ()
-
-main = do
+execute = do
 
 	let lostNumbers = [4,8,15,16,23,42]
 
