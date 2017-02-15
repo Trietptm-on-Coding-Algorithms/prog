@@ -1,0 +1,5 @@
+#!/bin/bash
+
+nohup mono /home/leland/Documents/KeePass/KeePass.exe &> /dev/null &
+
+disown %1
