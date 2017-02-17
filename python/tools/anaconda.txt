@@ -1,0 +1,8 @@
+Anaconda is a commerical software with a free version that allows users to create different environments for easy to use commands
+
+
+Basic environment setup
+-----------------------------------
+conda create --name snowflakes 
+source activate snowflakes
+jupyter notebook

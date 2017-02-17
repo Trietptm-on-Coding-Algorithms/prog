@@ -1,0 +1,16 @@
+
+React is based around using a templating engine in javascript called JSX. This allows templates to be inserted directly into the javascript without the problem of quotes
+
+
+() => {
+	return <myApp/>;
+}
+
+
+Each tag represents a module implemented using react.
+
+
+
+Component Library
+----------------------
+Material UI

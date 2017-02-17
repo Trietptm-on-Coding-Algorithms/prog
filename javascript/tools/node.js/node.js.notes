@@ -9,31 +9,14 @@ npm link
 npm install
 	installs dependencies
 
-
-express 
-	program that generates directories
-
-express PROJECTNAME
-	creates a directory for the project
-	steps to create
-		express PROJECT
-		npm install
-		node ap
-
-
-bower-yeoman-grunt
-
-yeoman creates the directory
-	uses generators
-	"yo angular" will create an angular directory
-	i installed the generator-angular	
-
-grunt serve - starts a server:
+npm config set 'prefix' '/home/leland/.npm_modules'
+	changes config setting for saving
 
 
 
-Debug Module
+Useful NPM Packages
+---------------------------
 
+yo (yeoman) - template creator
+gulp
 
-use DEBUG=* node JSFILE
-	this will give access to debug messagesq
